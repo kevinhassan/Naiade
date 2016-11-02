@@ -1,4 +1,4 @@
-CREATE TABLE "Administrateur" (
+CREATE TABLE Administrateur (
 	"idAdmin" serial NOT NULL,
 	"mdp" varchar(200) NOT NULL,
 	"email" varchar(200) NOT NULL UNIQUE,
@@ -12,7 +12,7 @@ CREATE TABLE "Administrateur" (
 
 
 
-CREATE TABLE "Membre" (
+CREATE TABLE Membre (
 	"idMembre" serial NOT NULL,
 	"email" varchar(200) NOT NULL UNIQUE,
 	"mdp" varchar(200) NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE "Membre" (
 
 
 
-CREATE TABLE "Capteur" (
+CREATE TABLE Capteur (
 	"idCapteur" serial NOT NULL,
 	"idMembre" serial NOT NULL,
 	"idZoneEau" serial NOT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE "Capteur" (
 
 
 
-CREATE TABLE "zoneEau" (
+CREATE TABLE zoneEau (
 	"idZoneEau" serial NOT NULL,
 	"idCarte" serial NOT NULL,
 	"description " varchar(200) NOT NULL,
@@ -56,7 +56,7 @@ CREATE TABLE "zoneEau" (
 
 
 
-CREATE TABLE "Carte" (
+CREATE TABLE Carte (
 	"idCarte" serial NOT NULL,
 	CONSTRAINT Carte_pk PRIMARY KEY ("idCarte")
 ) WITH (
@@ -67,9 +67,7 @@ CREATE TABLE "Carte" (
 
 
 
-ALTER TABLE "Capteur" ADD CONSTRAINT "Capteur_fk0" FOREIGN KEY ("idMembre") REFERENCES "Membre"("idMembre");
-ALTER TABLE "Capteur" ADD CONSTRAINT "Capteur_fk1" FOREIGN KEY ("idZoneEau") REFERENCES "zoneEau"("idZoneEau");
+ALTER TABLE Capteur ADD CONSTRAINT "Capteur_fk0" FOREIGN KEY ("idMembre") REFERENCES Membre("idMembre");
+ALTER TABLE Capteur ADD CONSTRAINT "Capteur_fk1" FOREIGN KEY ("idZoneEau") REFERENCES zoneEau("idZoneEau");
 
-ALTER TABLE "zoneEau" ADD CONSTRAINT "zoneEau_fk0" FOREIGN KEY ("idCarte") REFERENCES "Carte"("idCarte");
-
-
+ALTER TABLE zoneEau ADD CONSTRAINT "zoneEau_fk0" FOREIGN KEY ("idCarte") REFERENCES Carte("idCarte");
