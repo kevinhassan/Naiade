@@ -10,7 +10,7 @@
       </button>
       <div class="navbar-header">
         <a class="navbar-brand" href="#">
-          <img alt="Brand" src="...">
+          <img alt="Brand" src="">
         </a>
       </div>
     </div>
