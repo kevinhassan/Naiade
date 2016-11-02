@@ -3,7 +3,7 @@
     $view="accueil";
   }
     include "partials/header.php";
-    echo "<body>";
+    echo '<body id="page-top" class="index">';
     include "partials/navbar.php";
     include VIEW_PATH. $view . '.view.php';
     include "partials/footer.php";
