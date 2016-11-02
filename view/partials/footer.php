@@ -1,11 +1,51 @@
-  <footer>
-  <div id="cookie" class="alert alert-warning" role="alert">
-    <p> En utilisant EmploiTech, vous acceptez que nous appliquions des cookies afin de vous offrir une expérience optimale. </p>
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>Localisation</h3>
+                    <p>2 Place Pierre Viala, 34060 Montpellier
+                        <br><strong>04 99 61 22 00</strong></p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Nous suivre</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>A propos de Naïada</h3>
+                    <p>Cette société c'est développé dans l'optique d'aider les populations des zones arrides à accéder à l'eau.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <p> Ce site web a été réalisé dans le cadre d'un projet d'architecture Web par Godefroi Roussel, le contenu de la page "Pourquoi nous choisir" a
-    été pris du site www.randstad.fr/pourquoi-choisir-randstad/ .</p>
-    <p>Tous droits réservés.</p>
-  </footer>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; Naïada Company 2016
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 <!-- Debit injection javascript -->
   <script src="vendor/components/jquery/jquery.min.js"></script>
