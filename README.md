@@ -5,7 +5,7 @@ Challenge Innov'Agro 2016
 1. [Introduction](#introduction)
 2. [Idées de sujet](#idées-de-sujet)
 3. [Autres idées ?](#autres-idées)
-4. [Equipe D](#equipe-D)
+4. [Equipe D](#equipe-d)
 
 ### Introduction
 
@@ -32,9 +32,9 @@ Le but étant de mettre en commun les connaissances afin de répondre à la prob
 
 ### Equipe D
 
-* Godefroi Roussel (** IG3 **)
-* Kévin Hassan (** IG3 **)
-* Besma Ben-Attia (** MEA4 **)
-* Yann Biloe (** Agrotic **)
-* Delphine Batut (** Agrotic **)
-* Dimitri Szabo (** Agrotic **)
+* Godefroi Roussel (**IG3**)
+* Kévin Hassan (**IG3**)
+* Besma Ben-Attia (**MEA4**)
+* Yann Biloe (**SupAgro**)
+* Delphine Batut (**SupAgro**)
+* Dimitri Szabo (**SupAgro**)
