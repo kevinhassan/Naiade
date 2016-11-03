@@ -23,7 +23,7 @@ echo <<<EOT
             <div class="col-lg-12 text-center">
                 <h2>Cartographie</h2>
                 <hr>
-                <iframe src="https://plateforme.api-agro.fr/explore/embed/dataset/puits/map/?location=9,32.95521,10.00168&basemap=jawg.streets&static=false&datasetcard=false" width="800" height="600" frameborder="0"></iframe>
+                <iframe src="https://plateforme.api-agro.fr/explore/embed/dataset/releve/map/?basemap=mapbox.satellite&location=9,32.95521,10.00168&static=false&datasetcard=false" width="800" height="600" frameborder="0"></iframe>
             </div>
         </div>
     </div>
@@ -52,6 +52,7 @@ echo <<<EOT
                     <select class="form-control" name="type">
                             <option>Oasis</option>
                             <option>Puits</option>
+                            <option>Forage</option>
                     </select>
                     <p class="help-block text-danger"></p>
                 </div>
