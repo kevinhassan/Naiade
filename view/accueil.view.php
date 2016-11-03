@@ -22,6 +22,7 @@ echo <<<EOT
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>Galerie Photo</h2>
+                <iframe src="https://plateforme.api-agro.fr/explore/embed/dataset/puits/map/?location=9,32.95521,10.00168&basemap=jawg.streets&static=false&datasetcard=false" width="800" height="600" frameborder="0"></iframe>
                 <hr class="star-primary">
             </div>
         </div>
