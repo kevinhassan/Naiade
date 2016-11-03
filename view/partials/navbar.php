@@ -16,10 +16,10 @@
                     <a href="/">Accueil</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#Cartographie">Cartographie</a>
+                    <a href="#cartographie">Cartographie</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#partenaires">Partenaires</a>
+                    <a href="#partenaire">Partenariats</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#contact">Nous contacter</a>

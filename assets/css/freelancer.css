@@ -32,6 +32,7 @@ h6 {
   font-weight: 700;
 }
 hr.star-light,
+hr,
 hr.star-primary {
   padding: 0;
   border: none;
@@ -42,7 +43,6 @@ hr.star-primary {
 }
 hr.star-light:after,
 hr.star-primary:after {
-  content: "\f005";
   font-family: FontAwesome;
   display: inline-block;
   position: relative;
