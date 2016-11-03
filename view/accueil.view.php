@@ -5,7 +5,7 @@ echo <<<EOT
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive" src="../assets/img/profileHeader.png" alt="logo" width="15%">
+                <img class="img-responsive" src="../assets/img/logo.png" alt="logo" width="15%">
                 <div class="intro-text">
                     <span class="name">Naïade</span>
                     <hr class="star-light">
@@ -38,18 +38,18 @@ echo <<<EOT
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-        <form name="sentMessage" id="contactForm" novalidate>
+        <form action="../controller/addPoint.controller.php" method="post">
             <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls">
                     <label>Nom</label>
-                    <input type="text" class="form-control" placeholder="Nom" id="nom" required data-validation-required-message="Please enter your name.">
+                    <input type="text" class="form-control" placeholder="Nom" name="nom" required data-validation-required-message="Please enter your name.">
                     <p class="help-block text-danger"></p>
                 </div>
             </div>
             <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls">
                     <label>Type</label>
-                    <select class="form-control" id="type">
+                    <select class="form-control" name="type">
                             <option>Oasis</option>
                             <option>Puits</option>
                     </select>
@@ -59,21 +59,21 @@ echo <<<EOT
             <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls">
                     <label>Latitude</label>
-                    <input type="tel" class="form-control" placeholder="Latitude" id="latitude" required data-validation-required-message="Please enter your phone number.">
+                    <input type="number" step=any class="form-control" placeholder="Latitude" name="latitude" required data-validation-required-message="Please enter your phone number.">
                     <p class="help-block text-danger"></p>
                 </div>
             </div>
             <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls">
                     <label>Longitude</label>
-                    <input type="tel" class="form-control" placeholder="Longitude" id="longitude" required data-validation-required-message="Please enter your phone number.">
+                    <input type="number" step=any class="form-control" placeholder="Longitude" name="longitude" required data-validation-required-message="Please enter your phone number.">
                     <p class="help-block text-danger"></p>
                 </div>
             </div>
             <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls">
                     <label>Potabilité</label>
-                    <select class="form-control" id="potabilité">
+                    <select class="form-control" name="potabilite">
                             <option>N.C</option>
                             <option>Oui</option>
                             <option>Non</option>
@@ -84,7 +84,7 @@ echo <<<EOT
             <div class="row control-group">
                 <div class="form-group col-xs-12 floating-label-form-group controls">
                     <label>Description</label>
-                    <textarea rows="5" class="form-control" placeholder="Description" id="description" required data-validation-required-message="Please enter a message."></textarea>
+                    <textarea rows="2" class="form-control" placeholder="Description" name="description" required data-validation-required-message="Please enter a message."></textarea>
                     <p class="help-block text-danger"></p>
                 </div>
             </div>
