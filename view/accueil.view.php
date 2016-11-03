@@ -5,9 +5,9 @@ echo <<<EOT
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive" src="../assets/img/logo.png" alt="logo" width="150px">
+                <img class="img-responsive" src="../assets/img/logo.png" alt="logo" width="15%">
                 <div class="intro-text">
-                    <span class="name">Naïada</span>
+                    <span class="name">Naïade</span>
                     <hr class="star-light">
                     <span class="skills">La plateforme au service du bien commun !</span>
                 </div>
