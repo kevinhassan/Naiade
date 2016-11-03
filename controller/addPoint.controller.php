@@ -14,10 +14,12 @@
 
   //Execute the request
   $result = curl_exec($ch);
-
-  echo $result;
-
   curl_close($ch);
+  
+  header('Location: /');
+
+
+
 
 
  ?>
