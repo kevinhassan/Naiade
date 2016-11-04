@@ -20,17 +20,11 @@
                         <li>
                             <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                         </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                        </li>
                     </ul>
                 </div>
                 <div class="footer-col col-md-4">
-                    <h3>A propos de Naïada</h3>
-                    <p>Cette société c'est développé dans l'optique d'aider les populations des zones arrides à accéder à l'eau.</p>
+                    <h3>A propos de Naïade</h3>
+                    <p>Cette société c'est développée dans l'optique d'aider les populations des zones arrides à accéder à l'eau.</p>
                 </div>
             </div>
         </div>
@@ -39,7 +33,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    Copyright &copy; Naïada Company 2016
+                    Copyright &copy; Naïade Company 2016
                 </div>
             </div>
         </div>
