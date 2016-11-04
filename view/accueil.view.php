@@ -25,8 +25,7 @@ echo <<<EOT
                 <hr>
                 <h5 class="links" onclick="switchIframe(this)">Toutes les zones d'eau</h5>
                 <div class="container" id="allWater">
-                  <iframe src="https://plateforme.api-agro.fr/explore/embed/dataset/puits/map/?location=3,3.77656,76.37695&basemap=jawg.streets&static=false&datasetcard=false" width="800" height="600" frameborder="0"></iframe>
-                    <section>
+                <iframe src="https://plateforme.api-agro.fr/explore/embed/dataset/puits/map/?basemap=mapbox.satellite&location=9,32.95521,10.00168&static=false&datasetcard=false" width="800" height="600" frameborder="0"></iframe>                    <section>
                         <div class="container">
                           <div class="row">
                               <div class="col-lg-12 text-center">
