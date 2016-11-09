@@ -119,7 +119,7 @@ echo <<<EOT
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2">
                 <p>Notre mission est d 'offrir une plateforme qui permet la gestion raisonnée et collaborative des ressources d'eau.</p>
-                <p>Elle est principalement destinée à être utilisé dans des milieux arrides.</p>
+                <p>Elle est principalement destinée à être utilisée dans des milieux arides.</p>
             </div>
             <div class="col-lg-4">
                 <p>L' eau est un bien commun autant travailler ensemble pour la préserver ! </p>
