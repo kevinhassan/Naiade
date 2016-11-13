@@ -48,7 +48,7 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- Theme JavaScript -->
-  <script src="../../assets/js/freelancer.min.js"></script>
+  <script src="assets/js/freelancer.min.js"></script>
   <!-- Api agro dependancies-->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-animate.js"></script>

@@ -1,13 +1,12 @@
 <?php
-  /**
-  * Ajout des variables globales pour les emplacements
-  **/
-  define('ROOT', dirname(__FILE__));
-  define('DS', dirname(DIRECTORY_SEPARATOR));
-  define('VIEW_PATH', ROOT . DS . 'view' . DS);
-  define('MODEL_PATH', ROOT . DS . 'model' . DS);
-  define('CONTROLLER_PATH', ROOT . DS . 'controller' . DS);
-  define('ASSET_PATH',DS . 'assets' . DS);
+  global $ROOT,$DS, $VIEW_PATH, $MODEL_PATH, $CONTROLLER_PATH, $ASSET_PATH;
+  $ROOT = dirname('index.php');
+  $DS = dirname(DIRECTORY_SEPARATOR);
+  $VIEW_PATH = $ROOT . $DS . 'view' . $DS;
+  $MODEL_PATH = $ROOT . $DS . 'model' . $DS;
+  $CONTROLLER_PATH = $ROOT . $DS . 'controller' . $DS;
+  $ASSET_PATH = $ROOT .$DS . 'assets' . $DS;
 
-  include VIEW_PATH . 'layout.php';
+  $title="Naiade";
+  include $VIEW_PATH.'accueil.php';
 ?>

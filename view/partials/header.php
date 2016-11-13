@@ -1,8 +1,3 @@
-<?php
-  if(is_null($title))
-    $title = "Accueil";
-
-echo <<< EOT
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -14,15 +9,16 @@ echo <<< EOT
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Theme CSS -->
-    <link href="../../assets/css/freelancer.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <link rel="icon" type="image/png" href="../../assets/img/favicon.ico">
+<?php
+    echo '<link rel="icon" type="image/png" href="'.$ASSET_PATH.'img/favicon.ico">';
+    echo '<!-- Theme CSS -->';
+    echo '<link href="'.$ASSET_PATH.'css/freelancer.css" rel="stylesheet">';
+echo <<< EOT
     <title>$title</title>
   </head>
 EOT;
