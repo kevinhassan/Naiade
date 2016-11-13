@@ -24,7 +24,7 @@
                 </div>
                 <div class="footer-col col-md-4">
                     <h3>A propos de Naïade</h3>
-                    <p>Cette société c'est développée dans l'optique d'aider les populations des zones arrides à accéder à l'eau.</p>
+                    <p>Cette société s'est développée dans l'optique d'aider les populations des zones arides à accéder à l'eau.</p>
                 </div>
             </div>
         </div>
@@ -41,12 +41,18 @@
 </footer>
 
 
-<!-- Debit injection javascript -->
-  <script src="vendor/components/jquery/jquery.min.js"></script>
+<!-- Debut injection javascript -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <!-- Plugin JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
-  <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js" ></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- Theme JavaScript -->
   <script src="../../assets/js/freelancer.min.js"></script>
+  <!-- Api agro dependancies-->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-sanitize.js"></script>
+  <script src="https://opendatasoft.github.io/ods-widgets/dist/ods-widgets.js"></script>
+  <script src="https://opendatasoft.github.io/ods-widgets/docs-load-css.js"></script>
 <!--Fin injection -->

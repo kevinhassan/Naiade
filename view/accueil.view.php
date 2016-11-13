@@ -1,11 +1,12 @@
 <?php
 echo <<<EOT
+
 <!-- Header -->
 <header>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive" src="../assets/img/logo.png" alt="logo" width="15%">
+                <img class="img-responsive img-circle" src="../assets/img/logo.png" alt="logo" width="20%">
                 <div class="intro-text">
                     <span class="name">Naïade</span>
                     <hr class="star-light">
@@ -17,7 +18,7 @@ echo <<<EOT
 </header>
 
 <!-- Portfolio Grid Section -->
-<section id="cartographie">
+<section id="cartographie" ng-app="ods-widgets">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -25,87 +26,93 @@ echo <<<EOT
                 <hr>
                 <h5 class="links" onclick="switchIframe(this)">Toutes les zones d'eau</h5>
                 <div class="container" id="allWater">
-                <iframe src="https://plateforme.api-agro.fr/explore/embed/dataset/puits/map/?basemap=mapbox.satellite&location=9,32.95521,10.00168&static=false&datasetcard=false" width="800" height="600" frameborder="0"></iframe>                    <section>
-                        <div class="container">
-                          <div class="row">
-                              <div class="col-lg-12 text-center">
-                                  <h2>Ajouter des points d'eau</h2>
-                                  <hr class="star-primary">
+                  <ods-dataset-context  context="puits" puits-domain="plateforme.api-agro.fr" puits-dataset="puits" puits-apikey="f7a0efd008692d3d8aa6308d5c7c8fc0ff5eed0ab849677ba18aa6e8">
+                      <ods-map context="puits" location="4,33.72813,27.03955" basemap="mapbox.satellite"></ods-map>
+                  </ods-dataset-context>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12 text-center">
+                          <h2>Ajouter des points d'eau</h2>
+                          <hr class="star-primary">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                        <form action="../controller/addPoint.controller.php" method="post">
+                          <div class="row control-group">
+                              <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label>Nom</label>
+                                  <input type="text" class="form-control" placeholder="Nom" name="nom" required data-validation-required-message="Please enter your name.">
+                                  <p class="help-block text-danger"></p>
                               </div>
                           </div>
+                          <div class="row control-group">
+                              <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label>Type</label>
+                                  <select class="form-control" name="type">
+                                          <option>Oasis</option>
+                                          <option>Puits</option>
+                                          <option>Forage</option>
+                                  </select>
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                          </div>
+                          <div class="row control-group">
+                              <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label>Latitude</label>
+                                  <input type="number" step=any class="form-control" placeholder="Latitude" name="latitude" required data-validation-required-message="Please enter your phone number.">
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                          </div>
+                          <div class="row control-group">
+                              <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label>Longitude</label>
+                                  <input type="number" step=any class="form-control" placeholder="Longitude" name="longitude" required data-validation-required-message="Please enter your phone number.">
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                          </div>
+                          <div class="row control-group">
+                              <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label>Potabilité</label>
+                                  <select class="form-control" name="potabilite">
+                                          <option>N.C</option>
+                                          <option>Oui</option>
+                                          <option>Non</option>
+                                  </select>
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                          </div>
+                          <div class="row control-group">
+                              <div class="form-group col-xs-12 floating-label-form-group controls">
+                                  <label>Description</label>
+                                  <textarea rows="2" class="form-control" placeholder="Description" name="description" required data-validation-required-message="Please enter a message."></textarea>
+                                  <p class="help-block text-danger"></p>
+                              </div>
+                          </div>
+                          <br>
+                          <div id="success"></div>
                           <div class="row">
-                              <div class="col-lg-8 col-lg-offset-2">
-                          <form action="../controller/addPoint.controller.php" method="post">
-                              <div class="row control-group">
-                                  <div class="form-group col-xs-12 floating-label-form-group controls">
-                                      <label>Nom</label>
-                                      <input type="text" class="form-control" placeholder="Nom" name="nom" required data-validation-required-message="Please enter your name.">
-                                      <p class="help-block text-danger"></p>
-                                  </div>
-                              </div>
-                              <div class="row control-group">
-                                  <div class="form-group col-xs-12 floating-label-form-group controls">
-                                      <label>Type</label>
-                                      <select class="form-control" name="type">
-                                              <option>Oasis</option>
-                                              <option>Puits</option>
-                                              <option>Forage</option>
-                                      </select>
-                                      <p class="help-block text-danger"></p>
-                                  </div>
-                              </div>
-                              <div class="row control-group">
-                                  <div class="form-group col-xs-12 floating-label-form-group controls">
-                                      <label>Latitude</label>
-                                      <input type="number" step=any class="form-control" placeholder="Latitude" name="latitude" required data-validation-required-message="Please enter your phone number.">
-                                      <p class="help-block text-danger"></p>
-                                  </div>
-                              </div>
-                              <div class="row control-group">
-                                  <div class="form-group col-xs-12 floating-label-form-group controls">
-                                      <label>Longitude</label>
-                                      <input type="number" step=any class="form-control" placeholder="Longitude" name="longitude" required data-validation-required-message="Please enter your phone number.">
-                                      <p class="help-block text-danger"></p>
-                                  </div>
-                              </div>
-                              <div class="row control-group">
-                                  <div class="form-group col-xs-12 floating-label-form-group controls">
-                                      <label>Potabilité</label>
-                                      <select class="form-control" name="potabilite">
-                                              <option>N.C</option>
-                                              <option>Oui</option>
-                                              <option>Non</option>
-                                      </select>
-                                      <p class="help-block text-danger"></p>
-                                  </div>
-                              </div>
-                              <div class="row control-group">
-                                  <div class="form-group col-xs-12 floating-label-form-group controls">
-                                      <label>Description</label>
-                                      <textarea rows="2" class="form-control" placeholder="Description" name="description" required data-validation-required-message="Please enter a message."></textarea>
-                                      <p class="help-block text-danger"></p>
-                                  </div>
-                              </div>
-                              <br>
-                              <div id="success"></div>
-                              <div class="row">
-                                  <div class="form-group col-xs-12">
-                                      <button type="submit" class="btn btn-success btn-lg">Envoyer</button>
-                                  </div>
-                              </div>
-                          </form>
-                        </div>
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Envoyer</button>
+                            </div>
+                          </div>
+                        </form>
                       </div>
-                    </section>
+                    </div>
+                  </div>
                 </div>
                 <h5 class="links" onclick="switchIframe(this)">Les zones d'eau avec relevé</h5>
                 <div class="container" id="allReleves">
-                  <iframe src="https://plateforme.api-agro.fr/explore/embed/dataset/releve/map/?basemap=mapbox.satellite&location=9,32.95521,10.00168&static=false&datasetcard=false" width="800" height="600" frameborder="0"></iframe>                </div>
+                  <ods-dataset-context  context="releve" releve-domain="plateforme.api-agro.fr" releve-dataset="releve" releve-apikey="f7a0efd008692d3d8aa6308d5c7c8fc0ff5eed0ab849677ba18aa6e8">
+                      <ods-map context="releve" location="9,32.95521,10.00168" basemap="mapbox.satellite"></ods-map>
+                  </ods-dataset-context>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 <!-- About Section -->
 <section class="success" id="partenaire">
