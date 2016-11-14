@@ -19,7 +19,7 @@
                             <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            <a href="https://twitter.com/NaiadeFR" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
                         </li>
                     </ul>
                 </div>
