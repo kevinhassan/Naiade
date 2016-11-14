@@ -197,9 +197,6 @@ echo <<<EOT
         </div>
     </div>
 </section>
-EOT;
-include "partials/footer.php";
-?>
 <style>
   #allWater, #allReleves{
     display: none;
@@ -227,6 +224,6 @@ include "partials/footer.php";
     });
   }
 </script>
-<?php
-  echo "</body></html>";
+EOT;
+include "partials/footer.php";
 ?>

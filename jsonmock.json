@@ -1,9 +1,0 @@
-{
-"nom": "test",
-"description": "test",
-"type": "puits",
-"latitude": 46.2,
-"longitude": 50.355,
-"potabilite": "oui",
-"idReleve": 1
-}

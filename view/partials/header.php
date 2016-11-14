@@ -1,3 +1,5 @@
+<?php
+echo <<<EOT
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -14,11 +16,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-<?php
-    echo '<link rel="icon" type="image/png" href="'.$ASSET_PATH.'img/favicon.ico">';
-    echo '<!-- Theme CSS -->';
-    echo '<link href="'.$ASSET_PATH.'css/freelancer.css" rel="stylesheet">';
-echo <<< EOT
+    <link rel="icon" type="image/png" href="'/assets/img/favicon.ico">
+    <!-- Theme CSS -->
+    <link href="/assets/css/freelancer.css" rel="stylesheet">
     <title>$title</title>
   </head>
 EOT;

@@ -27,11 +27,11 @@
                 <?php
                   if(isset($_COOKIE["token"])){
                     echo '<li class="page-scroll">
-                            <a href="./view/login.php">Se connecter</a>
+                            <a href="/view/login.php">Se connecter</a>
                           </li>';
                   }else{
                     echo '<li class="page-scroll">
-                            <a href="./view/accueil.php">Se Déconnecter</a>
+                            <a href="/view/accueil.php">Se Déconnecter</a>
                           </li>';
                   }
                 ?>
