@@ -12,7 +12,7 @@
                     <h3>Nous suivre</h3>
                     <ul class="list-inline">
                         <li>
-                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/naiadeFR" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                         </li>
                         <li>
                             <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
