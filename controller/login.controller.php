@@ -1,5 +1,6 @@
 <?php
   require_once('../vendor/autoload.php');
+  require_once('../model/utilisateur.model.php');
   use Lcobucci\JWT\Builder;
   use Lcobucci\JWT\Signer\Hmac\Sha256;
 
@@ -44,25 +45,26 @@
   $email = htmlentities($_POST["email"],ENT_QUOTES);
   $mdp = htmlentities($_POST["password"],ENT_QUOTES);
 
-  if(!isset($email) && !isset($mdp)){
-    $sql = 'SELECT * FROM users WHERE email= :email';
-    $res = $this->query($sql,array(":libelle"=>$id));
+  if(isset($email) && isset($mdp)){
+    $utilisateur = new ModelUtilisateur();
+    $data = $utilisateur->selectUtilisateur($email);
+    echo $data["password"];
     if(crypt($mdp, $data["password"]) == $data["password"]){
-      echo "vous êtes connecté";
+      echo "Vous êtes connecté";
       $data = array(
         "email" => $email
       );
       $token = generate_jwt($data);
       setcookie("token", $token,$time_expiration, "/");
+      echo "vous êtes connecté !";
       /* get token from cookie
         $token = $_COOKIE["token"];
       echo "</br>".$token->getClaim("email");
               */
     }else{
-      echo "<script>alert('Erreur dans les informations entrées')</script>";
-      header("Location: /login");
+      echo "Information saisies non valides !";
     }
   }else{
-    header("Location: /login");
+    echo "Utilisateur non présent";
   }
 ?>

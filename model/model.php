@@ -8,10 +8,10 @@ abstract class Model {
   // Exécute une requête SQL éventuellement paramétrée
   protected function query($sql, $params = null) {
     if ($params == null) {
-      $resultat = $this->getBd()->query($sql);    // exécution directe
+      $resultat = $this->connexion()->query($sql);    // exécution directe
     }
     else {
-      $resultat = $this->getBd()->prepare($sql);  // requête préparée
+      $resultat = $this->connexion()->prepare($sql);  // requête préparée
       $resultat->execute($params);
     }
     return $resultat;

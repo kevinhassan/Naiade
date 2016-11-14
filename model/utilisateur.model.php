@@ -15,12 +15,17 @@ class ModelUtilisateur extends Model{
       $sql = 'INSERT INTO '.$this->table.'(nom,prenom,mail,mdp)
               VALUES(:nom,:prenom,:mail,:mdp)';
       $res = $this->query($sql,$data);
-
     }
     catch(PDOException $e){
       echo($e->getMessage());
       die("<br> Erreur lors de l'ajout de l'utilisateur à la table " . $this->table);
     }
+  }
+  public function selectUtilisateur($email){
+    $sql = 'SELECT * FROM users WHERE email= :email';
+    $res = $this->query($sql,array(':email' => $email));
+    print_r($res->fetch());
+    return $res->fetch();
   }
 }
 ?>

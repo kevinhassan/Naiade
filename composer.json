@@ -10,6 +10,7 @@
     "require": {
         "twbs/bootstrap": "^3.3",
         "components/jquery": "^3.1",
-        "components/font-awesome": "^4.7"
+        "components/font-awesome": "^4.7",
+        "lcobucci/jwt": "^3.2"
     }
 }

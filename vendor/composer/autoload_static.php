@@ -6,9 +6,25 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit7ab76c8747f49ccd7d39a55e89056111
 {
+    public static $prefixLengthsPsr4 = array (
+        'L' => 
+        array (
+            'Lcobucci\\JWT\\' => 13,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Lcobucci\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lcobucci/jwt/src',
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7ab76c8747f49ccd7d39a55e89056111::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7ab76c8747f49ccd7d39a55e89056111::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
