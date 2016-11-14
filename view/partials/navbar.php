@@ -19,7 +19,7 @@
                     <a href="#cartographie">Cartographie</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#partenaire">Partenariats</a>
+                    <a href="#partenaire">Ils nous soutiennent !</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#contact">Nous contacter</a>
