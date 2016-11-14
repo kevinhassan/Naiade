@@ -12,9 +12,13 @@ class ModelUtilisateur extends Model{
   **/
   public function createUtilisateur($data){
     try{
-      $sql = 'INSERT INTO '.$this->table.'(nom,prenom,mail,mdp)
-              VALUES(:nom,:prenom,:mail,:mdp)';
-      $res = $this->query($sql,$data);
+      /*$sql = 'INSERT INTO '.$this->table.'(nom,prenom,mail,mdp)
+              VALUES(:nom,:prenom,:mail,:mdp)';*/
+      $sql = 'INSERT INTO '.$this->table.'(email,password)
+              VALUES(:email,:password)';
+      $res = $this->query($sql,array(':email'=> $data["email"],
+                                    ':password'=> $data["password"]
+                                    ));
     }
     catch(PDOException $e){
       echo($e->getMessage());
@@ -22,9 +26,8 @@ class ModelUtilisateur extends Model{
     }
   }
   public function selectUtilisateur($email){
-    $sql = 'SELECT * FROM users WHERE email= :email';
+    $sql = 'SELECT * FROM utilisateur WHERE email= :email';
     $res = $this->query($sql,array(':email' => $email));
-    print_r($res->fetch());
     return $res->fetch();
   }
 }
