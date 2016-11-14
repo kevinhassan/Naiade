@@ -41,11 +41,11 @@ echo <<<EOT
                   </div>
                   <div class="row">
                       <div class="col-lg-8 col-lg-offset-2">
-                        <form action="../controller/addPoint.controller.php" method="post">
+                      <form name="addPoint" id="addPointForm" method="post" action="../controller/addPoint.controller.php" onsubmit="return confirm('Voulez vous ajouter cette zone d\'eau ?');">
                           <div class="row control-group">
                               <div class="form-group col-xs-12 floating-label-form-group controls">
                                   <label>Nom</label>
-                                  <input type="text" class="form-control" placeholder="Nom" name="nom" required data-validation-required-message="Please enter your name.">
+                                  <input type="text" class="form-control" placeholder="Nom" name="nom" required data-validation-required-message="Veuillez entrer un nom.">
                                   <p class="help-block text-danger"></p>
                               </div>
                           </div>
@@ -63,14 +63,14 @@ echo <<<EOT
                           <div class="row control-group">
                               <div class="form-group col-xs-12 floating-label-form-group controls">
                                   <label>Latitude</label>
-                                  <input type="number" step=any class="form-control" placeholder="Latitude" name="latitude" required data-validation-required-message="Please enter your phone number.">
+                                  <input type="number" step=any class="form-control" placeholder="Latitude" name="latitude" required data-validation-required-message="Veuillez entrer une latitude.">
                                   <p class="help-block text-danger"></p>
                               </div>
                           </div>
                           <div class="row control-group">
                               <div class="form-group col-xs-12 floating-label-form-group controls">
                                   <label>Longitude</label>
-                                  <input type="number" step=any class="form-control" placeholder="Longitude" name="longitude" required data-validation-required-message="Please enter your phone number.">
+                                  <input type="number" step=any class="form-control" placeholder="Longitude" name="longitude" required data-validation-required-message="Veuillez entrer une longitude.">
                                   <p class="help-block text-danger"></p>
                               </div>
                           </div>
@@ -88,7 +88,7 @@ echo <<<EOT
                           <div class="row control-group">
                               <div class="form-group col-xs-12 floating-label-form-group controls">
                                   <label>Description</label>
-                                  <textarea rows="2" class="form-control" placeholder="Description" name="description" required data-validation-required-message="Please enter a message."></textarea>
+                                  <textarea rows="2" class="form-control" placeholder="Description" name="description" required data-validation-required-message="Veuillez entrer une description."></textarea>
                                   <p class="help-block text-danger"></p>
                               </div>
                           </div>
