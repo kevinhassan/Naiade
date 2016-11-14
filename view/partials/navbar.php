@@ -25,7 +25,7 @@
                     <a href="#contact">Nous contacter</a>
                 </li>
                 <?php
-                  if(!isset($_COOKIE["token"])){
+                  if(is_null($_COOKIE["token"])){
                     echo '<li class="page-scroll">
                             <a href="/view/login.php">Se connecter</a>
                           </li>';

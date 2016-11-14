@@ -32,6 +32,9 @@ echo <<<EOT
                   <ods-dataset-context  context="puits" puits-domain="plateforme.api-agro.fr" puits-dataset="puits" puits-apikey="f7a0efd008692d3d8aa6308d5c7c8fc0ff5eed0ab849677ba18aa6e8">
                       <ods-map context="puits" location="4,33.72813,27.03955" basemap="mapbox.satellite"></ods-map>
                   </ods-dataset-context>
+EOT;
+if(!is_null($_COOKIE["token"])){
+echo<<<EOT
                 <div class="container">
                   <div class="row">
                       <div class="col-lg-12 text-center">
@@ -103,6 +106,9 @@ echo <<<EOT
                       </div>
                     </div>
                   </div>
+EOT;
+}
+echo<<<EOT
                 </div>
                 <h5 class="links" onclick="switchIframe(this)">Les zones d'eau avec relevé</h5>
                 <div class="container" id="allReleves">
