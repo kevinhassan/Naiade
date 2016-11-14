@@ -132,9 +132,9 @@ echo<<<EOT
                 <hr>
             </div>
         </div>
-        <div class="media">
+        <div class="media-left">
             <div class="media-left">
-                <img class="media-object" src="/assets/img/raddo.png" alt="logo" width="40%">
+                <img class="media-object" src="/assets/img/raddo.png" alt="logo" width="150px">
                 <div class="intro-text">
                     <blockquote><p>"Votre projet de recherche me semble très pertinent surtout que dans les zones arides et les oasis, il faut faire face à plusieurs défis autour de la gestion des ressources hydriques."
                         <br><small>RADDO</small></p>
@@ -142,7 +142,7 @@ echo<<<EOT
                 </div>
             </div>
             <div class="media-right">
-                <img class="media-object" src="/assets/img/esf.png" alt="logo" height="20%">
+                <img class="media-object" src="/assets/img/esf.png" alt="logo" height="150px">
                 <blockquote><p>"Une proposition très intéressante qui pourrait être par exemple un super outils d’aide à la décision pour les éleveurs transhumants dans la zone sahélienne pour préciser leurs choix de parcours pour l’abreuvement du bétails."
                     <br><small>Elevages Sans Frontières</small></p>
                 </blockquote>
