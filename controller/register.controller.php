@@ -12,7 +12,9 @@
       'email' => $email
     );
     $data = $utilisateur->createUtilisateur($user);
+    echo "<script>alert('Le compte vient d\'être créé !);</script>";
+    header('Location: /');
     }else{
-      echo "Les informations saisies sont incorrectes !";
+      echo "<script>alert('Les informations saisies sont incorrectes !);</script>";
     }
 ?>

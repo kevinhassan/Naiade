@@ -19,7 +19,7 @@ echo <<<EOT
     <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
     <!-- Theme CSS -->
     <link href="/assets/css/freelancer.css" rel="stylesheet">
-    <title>$title</title>
+    <title>Naïade</title>
   </head>
 EOT;
 ?>
