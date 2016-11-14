@@ -128,22 +128,24 @@ echo<<<EOT
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Partenariats</h2>
+                <h2>Ils nous soutiennent !</h2>
                 <hr>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-lg-offset-2">
-                <p>Notre mission est d 'offrir une plateforme qui permet la gestion raisonnée et collaborative des ressources d'eau.</p>
-                <p>Elle est principalement destinée à être utilisée dans des milieux arides.</p>
+        <div class="media">
+            <div class="media-left">
+                <img class="media-object" src="/assets/img/raddo.png" alt="logo" width="40%">
+                <div class="intro-text">
+                    <blockquote><p>"Votre projet de recherche me semble très pertinent surtout que dans les zones arides et les oasis, il faut faire face à plusieurs défis autour de la gestion des ressources hydriques."
+                        <br><small>RADDO</small></p>
+                    </blockquote>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <p>L' eau est un bien commun autant travailler ensemble pour la préserver ! </p>
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <a href="#" class="btn btn-lg btn-outline">
-                    <i class="fa fa-info"></i> En savoir plus
-                </a>
+            <div class="media-right">
+                <img class="media-object" src="/assets/img/esf.png" alt="logo" height="20%">
+                <blockquote><p>"Une proposition très intéressante qui pourrait être par exemple un super outils d’aide à la décision pour les éleveurs transhumants dans la zone sahélienne pour préciser leurs choix de parcours pour l’abreuvement du bétails."
+                    <br><small>Elevages Sans Frontières</small></p>
+                </blockquote>
             </div>
         </div>
     </div>
