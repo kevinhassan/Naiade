@@ -4,23 +4,6 @@
   use Lcobucci\JWT\Builder;
   use Lcobucci\JWT\Signer\Hmac\Sha256;
 
-  function connexion(){
-    $dbname='d32beon5hb13l6';
-    $host='ec2-54-228-247-206.eu-west-1.compute.amazonaws.com';
-    $dbuser='ymnqezzmtxqxel';
-    $dbpass='T7CYhHiAr3nP698thKvu77Tr9F';
-    try
-    {
-      $bd = new PDO("pgsql:dbname=$dbname;host=$host", $dbuser, $dbpass);
-      $bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      return $bd;
-    }
-    catch (PDOException $e)
-    {
-      echo $e->getMessage();
-      die('<br> Echec lors de la connexion à la BD');
-    }
-  }
   function generate_jwt($data) {
     $time_expiration = time() + (3600 *25); //24h
     $signer = new Sha256();
@@ -48,7 +31,6 @@
   if(isset($email) && isset($mdp)){
     $utilisateur = new ModelUtilisateur();
     $data = $utilisateur->selectUtilisateur($email);
-    echo $data["password"];
     if(crypt($mdp, $data["password"]) == $data["password"]){
       echo "Vous êtes connecté";
       $data = array(
@@ -65,6 +47,6 @@
       echo "Information saisies non valides !";
     }
   }else{
-    echo "Utilisateur non présent";
+    echo "Cet utilisateur n'existe pas";
   }
 ?>
