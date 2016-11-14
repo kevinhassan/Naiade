@@ -509,3 +509,8 @@ fieldset[disabled] .btn-success.active {
   color: #18BC9C;
   cursor: pointer;
 }
+#partenaire blockquote small{
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+}
