@@ -25,10 +25,10 @@
     return $token;
   }
 
-  $time_expiration = time() + (3600 *25); //24h
+$time_expiration = time() + (3600 *25); //24h
+if(is_null($_COOKIE["token"])){//Se connecter
   $email = htmlentities($_POST["email"],ENT_QUOTES);
   $mdp = htmlentities($_POST["password"],ENT_QUOTES);
-
   if(isset($email) && isset($mdp)){
     $utilisateur = new ModelUtilisateur();
     $data = $utilisateur->selectUtilisateur($email);
@@ -48,4 +48,10 @@
       echo "<script>alert('L'utilisateur n\'existe pas !');</script>";
     }
   }
+}
+else{//Se déconnecter
+  setcookie("token", "", time()-1000000,'/');
+  unset($_COOKIE["token"]);
+  header('Location: /');
+}
 ?>

@@ -31,7 +31,7 @@
                           </li>';
                   }else{
                     echo '<li class="page-scroll">
-                            <a href="/view/accueil.php">Se Déconnecter</a>
+                            <a href="/controller/login.controller.php">Se Déconnecter</a>
                           </li>';
                   }
                 ?>
