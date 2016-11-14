@@ -10,6 +10,7 @@
                 </div>
                 <div class="footer-col col-md-4">
                     <h3>Nous suivre</h3>
+                    <div class="fb-like" data-href="https://www.facebook.com/naiadeFR/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
                     <ul class="list-inline">
                         <li>
                             <a href="https://www.facebook.com/naiadeFR" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
@@ -55,6 +56,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-sanitize.js"></script>
   <script src="https://opendatasoft.github.io/ods-widgets/dist/ods-widgets.js"></script>
   <script src="https://opendatasoft.github.io/ods-widgets/docs-load-css.js"></script>
+  <!-- Facebook script -->
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 <!--Fin injection -->
 </body>
 </html>
