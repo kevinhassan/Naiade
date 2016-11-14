@@ -31,7 +31,7 @@
                             ->setNotBefore(time() + 60) // Configures the time that the token can be used (nbf claim)
                             ->setExpiration($time_expiration) // Configures the expiration time of the token (nbf claim)
                             //->set('uid', 1) // Configures a new claim, called "uid"
-                            ->set('username', $data["username"]) // Configures a new claim, called "uid"
+                            ->set('email', $data["email"]) // Configures a new claim, called "uid"
                             ->sign($signer, $privateKey) // creates a signature using "testing" as key
                             ->getToken(); // Retrieves the generated token
 
@@ -41,30 +41,28 @@
     return $token;
   }
   $time_expiration = time() + (3600 *25); //24h
-  $username = htmlentities($_POST["username"],ENT_QUOTES);
+  $email = htmlentities($_POST["email"],ENT_QUOTES);
   $mdp = htmlentities($_POST["password"],ENT_QUOTES);
 
-  if(!isset($username) && !isset($mdp)){
-    $sql = 'SELECT * FROM users WHERE username= :username';
+  if(!isset($email) && !isset($mdp)){
+    $sql = 'SELECT * FROM users WHERE email= :email';
     $res = $this->query($sql,array(":libelle"=>$id));
-    if(crypt($mdp, $data["password"]) == $data["password"]) {
+    if(crypt($mdp, $data["password"]) == $data["password"]){
       echo "vous êtes connecté";
       $data = array(
-        "username" => $username
+        "email" => $email
       );
       $token = generate_jwt($data);
       setcookie("token", $token,$time_expiration, "/");
       /* get token from cookie
         $token = $_COOKIE["token"];
-      echo "</br>".$token->getClaim("username");
+      echo "</br>".$token->getClaim("email");
               */
     }else{
       echo "<script>alert('Erreur dans les informations entrées')</script>";
-      $view="login";
       header("Location: /login");
     }
   }else{
-    $view="login";
     header("Location: /login");
   }
 ?>
