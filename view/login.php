@@ -10,25 +10,39 @@ echo <<< EOT
         <div class="row">
             <div class="col-sm-6 col-md-4 col-md-offset-4">
                 <div class="intro-text">
-                    <h4>Vous voulez accèder à plus de fonctionnalités ?</h4>
+                    <h4>Vous voulez accéder à plus de fonctionnalités ?</h4>
                 </div>
                 <h1 class="text-center login-title">Pour cela connectez vous !</h1>
                 <div class="account-wall">
-                    <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
-                        alt="">
-                    <form class="form-signin" action="../controller/login.controller.php" method='post'>
-                    <!--<input type="email" class="form-control" placeholder="Email" name="email" required autofocus>-->
-                    <input type="text" class="form-control" placeholder="Email" name="email" required autofocus>
-                    <input type="password" class="form-control" placeholder="Mot de passe" name="password" required>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">
-                        Se connecter</button>
+                  <img class="profile-img" src="/assets/img/userLogo.png" alt="logo Compte">
+                  <form class="form-signin" action="../controller/login.controller.php" method='post'>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                          <label>Email</label>
+                          <input type="email" class="form-control" placeholder="Email" name="email" required data-validation-required-message="Veuillez entrer votre Email.">
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                          <label>Mot de passe</label>
+                          <input type="password" class="form-control" placeholder="Mot de passe" name="password" required data-validation-required-message="Veuillez entrer votre mot de passe.">
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                          <button class="btn btn-success btn-lg" type="submit">
+                              Se connecter</button>
+                        </div>
+                    </div>
                     <label class="checkbox pull-left">
                         <input type="checkbox" value="remember-me">
                         Se souvenir de moi
                     </label>
                     <a href="#contact" class="pull-right need-help">Besoin d'aide ? </a><span class="clearfix"></span>
-                    </form>
-                    <a href="register.php" class="text-center new-account"> S'enregistrer </a>
+                  </form>
+                  <a href="register.php" class="text-center new-account"> S'enregistrer </a>
                 </div>
           </div>
         </div>
@@ -59,6 +73,7 @@ echo <<< EOT
   .form-signin .checkbox
   {
       font-weight: normal;
+      margin-left: 5px;
   }
   .form-signin .form-control
   {
@@ -74,26 +89,17 @@ echo <<< EOT
   {
       z-index: 2;
   }
-  .form-signin input[type="text"]
-  {
-      margin-bottom: -1px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-  }
-  .form-signin input[type="password"]
-  {
-      margin-bottom: 10px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-  }
   .account-wall
   {
       margin-top: 20px;
-      padding: 40px 0px 20px 0px;
+      padding: 40px 0px 0px 0px;
       background-color: #f7f7f7;
       -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
       -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
       box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      border-bottom-left-radius: 2em;
+      border-bottom-right-radius: 2em;
+
   }
   .login-title
   {
@@ -119,7 +125,13 @@ echo <<< EOT
   .new-account
   {
       display: block;
+      background-color: grey;
       margin-top: 10px;
+      margin-bottom:0;
+      shadow-box: 1px 2px;
+      color: white;
+      border-bottom-left-radius: 2em;
+      border-bottom-right-radius: 2em;
   }
 </style>
 EOT;
