@@ -27,7 +27,7 @@ echo <<< EOT
                     </label>
                     <a href="#contact" class="pull-right need-help">Besoin d'aide ? </a><span class="clearfix"></span>
                     </form>
-                    <a href="#" class="text-center new-account"> S'enregistrer </a>
+                    <a href="register.php" class="text-center new-account"> S'enregistrer </a>
                 </div>
           </div>
         </div>

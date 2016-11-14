@@ -1,3 +1,16 @@
+<?php
+$title = 'Connexion';
+include "partials/header.php";
+echo '<body id="page-top" class="index">';
+include "partials/navbar.php";
+
+echo <<< EOT
+<header style="background-color: white;color:black;">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</header>
 <div class="container">
             <form class="form-horizontal" role="form">
                 <h2>Registration Form</h2>
@@ -94,3 +107,6 @@
                 </div>
             </form> <!-- /form -->
         </div> <!-- ./container -->
+EOT;
+include "partials/footer.php";
+?>
