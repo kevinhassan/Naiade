@@ -2,7 +2,7 @@
 require_once("model.php");
 
 class ModelUtilisateur extends Model{
-  private $pk_key = "user_id";
+  private $pk_key = "idUser";
   private $table  = "Utilisateur";
 
   /**
@@ -14,10 +14,16 @@ class ModelUtilisateur extends Model{
     try{
       /*$sql = 'INSERT INTO '.$this->table.'(nom,prenom,mail,mdp)
               VALUES(:nom,:prenom,:mail,:mdp)';*/
-      $sql = 'INSERT INTO '.$this->table.'(email,password)
+      $sql = 'INSERT INTO '.$this->table.'(name,nickname,phone,date,job,country,email,password)
               VALUES(:email,:password)';
-      $res = $this->query($sql,array(':email'=> $data["email"],
-                                    ':password'=> $data["password"]
+      $res = $this->query($sql,array(':name'=> $data["name"],
+                                     ':nickname'=> $data["nickname"],
+                                     ':phone'=> $data["phone"],
+                                     ':date'=> $data["date"],
+                                     ':job'=> $data["job"],
+                                     ':contry'=> $data["country"],
+                                     ':email'=> $data["email"],
+                                     ':password'=> $data["password"]
                                     ));
     }
     catch(PDOException $e){
