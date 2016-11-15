@@ -136,7 +136,7 @@ echo<<<EOT
             <div class="media-left">
                 <img class="media-object" src="/assets/img/raddo.png" alt="logo RADDO" width="150px">
                 <div class="intro-text">
-                    <blockquote><p>"Votre projet de recherche me semble très pertinent surtout que dans les zones arides et les oasis, il faut faire face à plusieurs défis autour de la gestion des ressources hydriques."
+                    <blockquote><p>"Très pertinent surtout que dans les zones arides et les oasis, il faut faire face à plusieurs défis autour de la gestion des ressources hydriques."
                         <br><small>RADDO</small></p>
                     </blockquote>
                 </div>
