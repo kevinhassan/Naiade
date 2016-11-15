@@ -15,13 +15,13 @@ class ModelUtilisateur extends Model{
       /*$sql = 'INSERT INTO '.$this->table.'(nom,prenom,mail,mdp)
               VALUES(:nom,:prenom,:mail,:mdp)';*/
       $sql = 'INSERT INTO '.$this->table.'(name,nickname,phone,date,job,country,email,password)
-              VALUES(:email,:password)';
+              VALUES(:name,:nickname,:phone,:date,:job,:country,:email,:password)';
       $res = $this->query($sql,array(':name'=> $data["name"],
                                      ':nickname'=> $data["nickname"],
                                      ':phone'=> $data["phone"],
                                      ':date'=> $data["date"],
                                      ':job'=> $data["job"],
-                                     ':contry'=> $data["country"],
+                                     ':country'=> $data["country"],
                                      ':email'=> $data["email"],
                                      ':password'=> $data["password"]
                                     ));

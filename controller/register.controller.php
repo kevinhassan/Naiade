@@ -8,10 +8,16 @@
     $newMdp = crypt($mdp,'$5$rounds=5000$anexamplestringforsalt$');
     $utilisateur = new ModelUtilisateur();
     $user= array(
-      'password' => $newMdp,
-      'email' => $email
+      'name' => $_POST["name"],
+      'nickname' => $_POST["nickname"],
+      'phone' => $_POST["phone"],
+      'date' => $_POST["date"],
+      'job' => $_POST["job"],
+      'country' => $_POST["country"],
+      'email' => $email,
+      'password' => $newMdp
     );
-    $data = $utilisateur->createUtilisateur($user);
+    $utilisateur->createUtilisateur($user);
     echo "<script>alert('Le compte vient d\'être créé !);</script>";
     header('Location: /');
     }else{
