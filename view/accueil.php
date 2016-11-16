@@ -48,7 +48,7 @@ echo<<<EOT
                           <div class="row control-group">
                               <div class="form-group col-xs-12 floating-label-form-group controls">
                                   <label>Nom</label>
-                                  <input type="text" class="form-control" placeholder="Nom" name="nom" value="Aouinet Jebr" required data-validation-required-message="Veuillez entrer un nom.">
+                                  <input type="text" class="form-control" placeholder="Nom" name="nom" value="Ej-Jabria" required data-validation-required-message="Veuillez entrer un nom.">
                                   <p class="help-block text-danger"></p>
                               </div>
                           </div>
