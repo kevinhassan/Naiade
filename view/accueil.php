@@ -29,9 +29,9 @@ echo <<<EOT
                 <hr>
                 <h5 class="links" onclick="switchIframe(this)">Toutes les zones d'eau</h5>
                 <div class="container" id="allWater">
-                  <ods-dataset-context  context="puits" puits-domain="plateforme.api-agro.fr" puits-dataset="puits" puits-apikey="f7a0efd008692d3d8aa6308d5c7c8fc0ff5eed0ab849677ba18aa6e8">
-                      <ods-map context="puits" location="4,33.72813,27.03955" basemap="mapbox.satellite"></ods-map>
-                  </ods-dataset-context>
+                <ods-dataset-context  context="paturage" paturage-domain="plateforme.api-agro.fr" paturage-dataset="paturage" paturage-apikey="f7a0efd008692d3d8aa6308d5c7c8fc0ff5eed0ab849677ba18aa6e8">
+  <ods-map context="paturage" location="4,33.72813,27.03955" basemap="mapbox.satellite"></ods-map>
+</ods-dataset-context>
 EOT;
 if(!is_null($_COOKIE["token"])){
 echo<<<EOT
