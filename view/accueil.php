@@ -91,7 +91,7 @@ echo<<<EOT
                           <div class="row control-group">
                               <div class="form-group col-xs-12 floating-label-form-group controls">
                                   <label>Description</label>
-                                  <textarea rows="2" class="form-control" placeholder="Description" name="description" value="Puits facile d'accès !" required data-validation-required-message="Veuillez entrer une description."></textarea>
+                                  <textarea rows="2" class="form-control" placeholder="Description" name="description" required data-validation-required-message="Veuillez entrer une description."></textarea>
                                   <p class="help-block text-danger"></p>
                               </div>
                           </div>
